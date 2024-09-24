@@ -1,1 +1,4 @@
-/* Add CSS styles for your web site here and use them in index.html. */
+.constrained-img {
+    width: 400px;
+    height: auto; /* Keeps the aspect ratio */
+}
