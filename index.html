@@ -4,32 +4,42 @@
 <head>
     <title>Behind Every Brazil Nut</title> 
 
-    <!-- uncomment this block of code so that you can add at least two CSS declarations  
     <style>
-        body {}
-        h1   {}
-        p    {}
-        .important {} <- this will require you to declare a class="important" in one of your HTML elements
-        #interesting {} <- this will require you to declare a id="interesting" in one of your HTML elements
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: green;
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .important {
+            color: rgb(37, 2, 163);
+            font-weight: bold;
+        }
+        #interesting {
+            background-color: rgb(25, 136, 3);
+            padding: 10px;
+        }
     </style>
-    -->
      
-     
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
 
     <!--- Headings --->
     <img  /> <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
     <h1>Behind Every Brazil Nut: A Journey of Hands and Hearts</h1>
     <h3>An inside look at the dedication, effort, and generations of tradition behind the families who harvest Brazil nuts in the Amazon Rainforest.</h3>
-    <button type="button">oooh this is a button</button>
-    <button type="button">another button!</button>
+    <button type="button">Donate to Stop Amazon Deforestation</button>
+    <button type="button">See more about Tyfano Peter's Photography</button>
 
 
     <!--- About --->
@@ -40,7 +50,7 @@
 
     <!--- Data --->
 
-    <h3>Quick Facts about Brazil Nuts</h3>
+    <h3 class="important">Quick Facts about Brazil Nuts</h3>
     <img src="" />
     <h4>Add some charts + captions that illustrate my topic and why it is a problem </h4>
 
@@ -52,14 +62,16 @@
         <li> >45%</li>
     </ul>
     <!--- Impact --->
-    <h2>Impact!</h2>
+    <h2 id="interesting">Impact!</h2>
 
-    <img src="" />
+    <img src="img/boleando cutting open w machete.jpg" class="constrained-img"  alt="Person cutting open a Brazil nut with a machete." />
+    <h5>A man in Bolivia uses a machete to cut open a Brazil Nut Cluster. Photo credit: Tyfano Peter</h5>
     <h3>Where can this problem have lasting effects?</h3>
     <p>Why?
     </p>
 
-    <img src="" />
+    <img src="img/big bag of brazil nuts color.jpg" class="constrained-img"  alt="A large burlap bag full of freshly harvested Brazil Nuts." />
+    <h5>A freshly harvested bag of Brazil nuts sits in the Amazon rainforest. Photo credit: Tyfano Peter</h5>
     <h3>Where else can this problem have lasting effects?</h3>
     <p>Why?
     </p>
