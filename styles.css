@@ -1,4 +1,237 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5; /* Light earth tone */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background-image: url(''); /* Optional: Add a subtle texture or background image */
+}
+
+/* Constrained Image Class */
 .constrained-img {
-    width: 400px;
-    height: auto; /* Keeps the aspect ratio */
+    max-width: 95%; /* Ensures the image is never wider than its container */
+    height: auto;    /* Maintains the image's aspect ratio */
+    display: block;  /* Ensures no unnecessary space below the image */
+    margin: 0 auto;  /* Optional: centers the image horizontally if it's smaller than its container */
+    border-radius: 10px; /* Optional: adds rounded corners for style */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Pseudo-classes for links */
+a:link {
+    color: #2F4F4F; /* Deep forest green for default links */
+}
+
+a:visited {
+    color: #8B4513; /* Earthy brown for visited links */
+}
+
+a:hover {
+    color: #556B2F; /* Olive green on hover */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #8B0000; /* Dark red when active */
+}
+
+.container {
+    width: 80%; /* This controls the width of your content */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding-left: 20px; /* Add padding for spacing from the sides */
+    padding-right: 20px; /* Add padding for spacing from the sides */
+    background-color: white; /* Add background color to visually separate content */
+    border-left: 2px solid #ccc; /* Light gray border on the left */
+    border-right: 2px solid #ccc; /* Light gray border on the right */
+}
+
+/* Section Padding */
+.section {
+    padding: 60px 0;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #2F4F4F; /* Dark forest green for sleek look */
+    margin-bottom: 1.5rem;
+    padding: 10px;
+}
+
+/* Specific heading styles */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #6B8E23; /* Earthy green for smaller headings */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    line-height: 1.8; 
+    padding: 10px;
+}
+
+/* List Styling */
+ol, ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding: 10px;
+}
+
+ol li, ul li {
+    color: #6B8E23; 
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    list-style-type: disc;
+}
+
+/* Button Styling */
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; 
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #005f6b; /* Darker teal on hover */
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto; /* Adds margin and centers the video */
+}
+
+/* Responsive Video */
+.constrained-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove any default borders */
+}
+
+/* Class and ID Selectors */
+
+/* Header Class */
+.header {
+    background-color: #556B2F; /* Olive green */
+    color: #FFF;
+    padding-top: 20px; /* Add padding to the top */
+    margin-bottom: 40px; /* Add margin to the bottom for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Left Side of Header */
+#header-left {
+    width: 60%; /* Allocate 60% of the width for the left side */
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/* Right Side of Header */
+#header-right {
+    width: 40%; /* Allocate 40% of the width for the right side */
+    text-align: right;
+}
+
+/* Header Image */
+#header-img {
+    max-width: 100px; /* Cap the size of the image */
+    width: 80px; /* Define the width */
+    height: auto;
+    margin-left: 10px; /* Add margin to the left */
+    margin-right: 15px; /* Add margin to the right */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Button inside the header */
+.header-button {
+    background-color: #8B4513; /* Saddle brown */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 20px 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer; /* Show pointer when hovering over buttons */
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #6B8E23; /* Earthy green on hover */
+}
+
+
+/* Footer Styling */
+.footer {
+    position: relative; 
+    width: 100%;
+    background-color: #769343; 
+    color: white;
+    text-align: center;
+    padding: 10px 0; 
+    margin: 0;
+    font-size: 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+/* Footer Links */
+.footer a {
+    color: #005f6b; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
 }
