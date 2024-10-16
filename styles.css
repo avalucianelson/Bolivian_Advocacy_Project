@@ -16,6 +16,34 @@ body {
     background-image: url(''); /* Optional: Add a subtle texture or background image */
 }
 
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333; /* Dark background */
+    color: #f5f5f5; /* Light text color */
+}
+
+.dark-mode a {
+    color: #f5f5f5; /* Light link color */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+    color: #f5f5f5; /* Light heading color */
+}
+
+.dark-mode button {
+    background-color: #444; /* Darker button background */
+    color: #f5f5f5; /* Light button text */
+}
+
+.dark-mode .navbar {
+    background-color: #444; /* Darker navbar background */
+}
+
 /* Constrained Image Class */
 .constrained-img {
     max-width: 95%; /* Ensures the image is never wider than its container */
@@ -155,61 +183,51 @@ button:hover {
     border: none; /* Remove any default borders */
 }
 
-/* Class and ID Selectors */
-
-/* Header Class */
-.header {
+.header-container {
     background-color: #556B2F; /* Olive green */
     color: #FFF;
-    padding-top: 20px; /* Add padding to the top */
-    margin-bottom: 40px; /* Add margin to the bottom for spacing */
+    padding: 20px 10px; /* Adjusted padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
-/* Left Side of Header */
-#header-left {
-    width: 60%; /* Allocate 60% of the width for the left side */
+.header-item:nth-of-type(1) {
+    flex: 4; /* Gives more space to the title */
     text-align: left;
-    font-size: 1.5rem;
 }
 
-/* Right Side of Header */
-#header-right {
-    width: 40%; /* Allocate 40% of the width for the right side */
+.header-item:nth-of-type(2) {
+    flex: 1; /* Less space for the buttons */
     text-align: right;
 }
 
-/* Header Image */
-#header-img {
-    max-width: 100px; /* Cap the size of the image */
-    width: 80px; /* Define the width */
-    height: auto;
-    margin-left: 10px; /* Add margin to the left */
-    margin-right: 15px; /* Add margin to the right */
-    border-radius: 50%; /* Make the image circular */
+/* Navigation Bar Styling */
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20px; /* Adjusted margin-bottom */
 }
 
-/* Button inside the header */
-.header-button {
-    background-color: #8B4513; /* Saddle brown */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin: 10px 20px 10px 0;
+.navbar li {
+    float: left; /* Align list items to the left */
+    margin: 0 10px; /* Margin around each list item */
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #2F4F4F; /* Deep forest green for links */
     text-align: center;
-    border-radius: 5px;
-    cursor: pointer; /* Show pointer when hovering over buttons */
-    transition: background-color 0.3s ease;
+    padding: 0px; /* Padding around links */
 }
 
-.header-button:hover {
-    background-color: #6B8E23; /* Earthy green on hover */
+.navbar a:hover {
+    background-color: #f5f5f5; /* Light earth tone on hover */
 }
-
 
 /* Footer Styling */
 .footer {
@@ -223,8 +241,6 @@ button:hover {
     font-size: 1rem;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
 }
-
-
 
 /* Footer Links */
 .footer a {
