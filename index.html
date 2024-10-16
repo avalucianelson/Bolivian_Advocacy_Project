@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Behind Every Brazil Nut</title>     
     <meta charset="utf-8">
@@ -9,23 +8,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li ><button id="theme-button">Toggle Dark Mode</button></li>
+        </ul>
+    </div>
 
-    <!--- Headings --->
-    <img  /> <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
-    <h1>Behind Every Brazil Nut: A Journey of Hands and Hearts</h1>
+    <!--- Header Refactored to use Flexbox --->
+    <div class="header-container">
+        <div class="header-item">
+            <h1>Behind Every Brazil Nut: A Journey of Hands and Hearts</h1>
+        </div>
+        <div class="header-item">
+            <button type="button">Donate to Stop Amazon Deforestation</button>
+            <button type="button">See more of Tyfano Peter's Photography</button>
+        </div>
+    </div>
+    
     <h3>An inside look at the dedication, effort, and generations of tradition behind the families who harvest Brazil nuts in the Amazon Rainforest, made possible by the photo journalism of Bolivian photographer Tyfano Peter.</h3>
-    <button type="button">Donate to Stop Amazon Deforestation</button>
-    <button type="button">See more of Tyfano Peter's Photography</button>
-
 
     <!--- About --->
     <h2>What's so Special About Brazil Nuts?</h2>
-    <p>What seems like an ordinary snack hides a remarkable story of resilience and tradition. Recognizing the labor and tradition behind each Brazil nut invites a deeper appreciation for this exceptional resource and encourages mindful consumption.
-    </p>
+    <p>What seems like an ordinary snack hides a remarkable story of resilience and tradition. Recognizing the labor and tradition behind each Brazil nut invites a deeper appreciation for this exceptional resource and encourages mindful consumption.</p>
 
     <h4>Quick Facts</h4>
     <ul>
-        <li> 
+        <li>
             The name "Brazil Nut" is a bit of a misnomer — Brazil nuts are actually a seed, and most Brazil nuts are harvested in Bolivia!
             <a href="https://www.worldatlas.com/articles/top-brazil-nut-consuming-countries.html" target="_blank">(Source)</a>
         </li>
@@ -33,7 +45,7 @@
             Brazil nuts are the most economically impactful non-timber forest product in the Amazon Basin.
             <a href="https://forestsnews.cifor.org/33554/brazil-nut-special-for-brazil-nuts-a-little-logging-may-go-a-long-way" target="_blank">(Source)</a>
         </li>
-        <li> 
+        <li>
             The Brazil nut industry supports more than 60,000 families in Brazil, Peru, and Bolivia.
             <a href="https://www.youtube.com/watch?v=Knek_H2dgYA" target="_blank">(Source)</a>
         </li>
@@ -46,6 +58,10 @@
             <a href="https://oec.world/en/profile/hs/freshdried-brazil-nuts" target="_blank">(Source)</a>
         </li>
     </ul>
+
+</body>
+</html>
+
     <!--- Impact --->
     <h2 id="interesting">Impact!</h2>
 
@@ -109,6 +125,7 @@
             <a href="https://www.worldwildlife.org/stories/3-ways-you-can-help-protect-the-amazon" target="_blank">World Wildlife Fund</a>.
         </p>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
