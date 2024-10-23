@@ -163,6 +163,25 @@ button:hover {
     background-color: #005f6b; /* Darker teal on hover */
 }
 
+/* Petition Styling */
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%; /* Ensure it spans the full width of its container */
+    padding-bottom: 50px;
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
+}
+
 /* Video Container */
 .video-container {
     position: relative;
