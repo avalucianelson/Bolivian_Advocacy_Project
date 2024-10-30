@@ -7,11 +7,10 @@
 
 /* Body Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5; /* Light earth tone */
+    font-family: 'Merriweather', 'Open Sans', system-ui, sans-serif;    
     color: #333;
     line-height: 1.6;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     background-image: linear-gradient(to bottom, #ffffff, #f7f7f7, #f2f5e6, #f5f0e0);
     background-repeat: no-repeat;
@@ -48,11 +47,12 @@ body {
 
 /* Constrained Image Class */
 .constrained-img {
-    max-width: 95%; /* Ensures the image is never wider than its container */
+    max-width: 75%; /* Ensures the image is never wider than its container */
     height: auto;    /* Maintains the image's aspect ratio */
     display: block;  /* Ensures no unnecessary space below the image */
     margin: 0 auto;  /* Optional: centers the image horizontally if it's smaller than its container */
     border-radius: 10px; /* Optional: adds rounded corners for style */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Link Styles */
@@ -63,24 +63,20 @@ a {
 
 /* Pseudo-classes for links */
 a:link {
-    color: #2F4F4F; /* Deep forest green for default links */
-}
-
-a:visited {
-    color: #8B4513; /* Earthy brown for visited links */
+    color: #054c02; /* Deep forest green for default links */
 }
 
 a:hover {
-    color: #556B2F; /* Olive green on hover */
+    color: #066703; 
     text-decoration: underline;
 }
 
 a:active {
-    color: #8B0000; /* Dark red when active */
+    color: #8B0000;
 }
 
 .container {
-    width: 80%; /* This controls the width of your content */
+    width: 70%; /* This controls the width of your content */
     margin: 0 auto; /* Centers the content horizontally */
     padding-left: 20px; /* Add padding for spacing from the sides */
     padding-right: 20px; /* Add padding for spacing from the sides */
@@ -94,128 +90,12 @@ a:active {
     padding: 60px 0;
 }
 
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    color: #2F4F4F; /* Dark forest green for sleek look */
-    margin-bottom: 1.5rem;
-    padding: 10px;
-}
-
-/* Specific heading styles */
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4, h5, h6 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #6B8E23; /* Earthy green for smaller headings */
-}
-
-/* Paragraph Styles */
-p {
-    font-size: 1rem;
-    color: #333333;
-    margin-bottom: 1.5rem;
-    line-height: 1.8; 
-    padding: 10px;
-}
-
-/* List Styling */
-ol, ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding: 10px;
-}
-
-ol li, ul li {
-    color: #6B8E23; 
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-    list-style-type: disc;
-}
-
-/* Button Styling */
-button {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    padding: 15px 32px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px; 
-    padding: 10px;
-}
-
-button:hover {
-    background-color: #005f6b; /* Darker teal on hover */
-}
-
-/* Petition Styling */
-.petition-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%; /* Ensure it spans the full width of its container */
-    padding-bottom: 50px;
-}
-
-.petition-para {
-    width: 55%;
-    padding-right: 10px;
-}
-
-.signatures {
-    width: 45%;
-    padding-right: 10px;
-}
-
-/* Add to CSS file */
-input.error {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
-    background:pink;
-  }
-
-/* Video Container */
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    margin: 20px auto; /* Adds margin and centers the video */
-}
-
-/* Responsive Video */
-.constrained-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Remove any default borders */
-}
-
+/* Header Styling */
 .header-container {
-    background-color: #556B2F; /* Olive green */
+    background-color: #758064; 
     color: #FFF;
     padding: 20px 10px; /* Adjusted padding */
+    margin: -20px -20px 0 -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,27 +115,147 @@ input.error {
 .navbar ul {
     list-style-type: none;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    margin-bottom: 20px; /* Adjusted margin-bottom */
+    margin-bottom: 20px; 
 }
 
 .navbar li {
-    float: left; /* Align list items to the left */
-    margin: 0 10px; /* Margin around each list item */
+    list-style-type: none; /* Remove the bullet points */
+    float: left; 
+    margin: 0 10px; 
 }
 
 .navbar a {
     display: block;
     text-decoration: none;
-    color: #2F4F4F; /* Deep forest green for links */
+    color: #054c02; 
     text-align: center;
-    padding: 0px; /* Padding around links */
+    padding: 0px;
 }
 
 .navbar a:hover {
-    background-color: #f5f5f5; /* Light earth tone on hover */
+    color: #f5f5f5; 
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #0b3e09;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding: 10px;
+}
+
+
+/* Specific heading styles */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #054c02; 
+    text-align: center;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    line-height: 1.8; 
+    padding: 10px;
+}
+
+/* List Styling */
+ol, ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding: 10px;
+}
+
+ol li, ul li {
+    color: #054c02;; 
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    list-style-type: disc;
+}
+
+/* Button Styling */
+button {
+    background-color: #6c5238;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; 
+    padding: 10px;
+  }
+  
+  button:hover {
+    background-color: #786C3B; 
+  }
+
+/* Form Styling */
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%; 
+    padding-bottom: 50px;
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
+}
+
+input.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background:pink;
+  }
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 50%; 
+    padding-bottom: 28.13%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.constrained-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Form Styling */
@@ -282,20 +282,19 @@ input.error {
 
 /* Footer Styling */
 .footer {
-    position: relative; 
-    width: 100%;
-    background-color: #769343; 
+    background-color: #758064;
     color: white;
     text-align: center;
-    padding: 10px 0; 
-    margin: 0;
-    font-size: 1rem;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    margin: 0 -30px; /* Add this line to extend the footer to the left and right */
+    padding: 10px 20px; /* Update the padding to account for the negative margin */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 /* Footer Links */
 .footer a {
-    color: #005f6b; 
+    color: #054c02; 
     text-decoration: none;
 }
 
