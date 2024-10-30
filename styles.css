@@ -182,6 +182,14 @@ button:hover {
     padding-right: 10px;
 }
 
+/* Add to CSS file */
+input.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background:pink;
+  }
+
 /* Video Container */
 .video-container {
     position: relative;
@@ -246,6 +254,28 @@ button:hover {
 
 .navbar a:hover {
     background-color: #f5f5f5; /* Light earth tone on hover */
+}
+
+/* Form Styling */
+#sign-petition {
+    padding: 20px; /* Spacing inside the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    margin: 20px 0; /* Vertical spacing around the form */
+} 
+
+#sign-petition label {
+    display: block; /* Makes the label take up the full width */
+    margin-bottom: 5px; /* Space below each label */
+    color: #333; /* Dark color for text */
+    font-size: 16px; /* Slightly larger text for readability */
+}
+
+#sign-petition input[type="text"] {
+    width: 100%; /* Full width of the form */
+    padding: 8px; /* Comfortable padding inside the inputs */
+    margin-bottom: 15px; /* Space below each input field */
+    border: 1px solid #ccc; /* Subtle border for the inputs */
+    border-radius: 4px; /* Slightly rounded borders for the inputs */
 }
 
 /* Footer Styling */
