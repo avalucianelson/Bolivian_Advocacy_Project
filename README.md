@@ -16,7 +16,6 @@ The website showcases the beautiful and hard work of the families who gather Bra
 
 This project serves as an example for my students in WEB101. In the class, each student builds a website that aligns with a cause they are passionate about. Week by week, I adjust this website as my students learn more concepts such as HTML, CSS, and JavaScript. This allows me to demonstrate how to apply new skills directly to an advocacy project, evolving it as we progress through the course.
 
-If you're interested in learning more about web development or supporting this advocacy effort, please explore the repository or contact me through my GitHub profile.
 
 ## 🚀 Installation and Usage
 
@@ -30,6 +29,3 @@ If you're interested in learning more about web development or supporting this a
    ```
 3. Open the `index.html` file in your browser to view the site.
 
-## 🤝 Contributing
-
-Feel free to fork the repository and submit pull requests if you want to contribute to the project or add more advocacy content. All contributions are welcome!
