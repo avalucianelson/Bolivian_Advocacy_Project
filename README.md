@@ -2,6 +2,8 @@
 
 Welcome to my **Brazil Nut Advocacy Project** repository! This project is part of my work as a Tech Fellow for CodePath's **Introduction to Web Development** class (WEB101), where I guide students through building websites that advocate for causes they're passionate about. Alongside the students, I build this site using the same fundamentals taught in the course (updating it each week as they learn more), serving as an example of how to create a meaningful and impactful advocacy project through web development.
 
+You can visit the project website [here](https://avalucianelson.github.io/Brazil_Nuts/)
+
 ## 🌿 Project Overview
 
 My project focuses on building awareness about the harvesting of Brazil nuts, a process that supports thousands of Latin American families, particularly in Bolivia, Peru, and Brazil. Brazil nut harvesting is an essential livelihood for many in the Amazon rainforest region, yet it often goes unnoticed by the world. My goal is to build awareness around the uniqueness of Brazil Nut harvesting and the sacrifices that go into it. 
